@@ -37,6 +37,14 @@ class FizzBuzz {
         }
     }
 
+    // Does FizzBuzz from 0 to 100
+    public static void do100FizzBuzz() {
+        int i = 1;
+        while (i < 100) {
+            i = doFizzBuzz(i);
+        }
+    }
+
     // Does Fizzbuzz on a positive integer i
     private static int doFizzBuzz(int i) {
         if (i % 15 == 0) { // If i is divisible by 3 and 5, print Fizz Buzz
