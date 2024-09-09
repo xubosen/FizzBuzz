@@ -31,16 +31,22 @@ class FizzBuzz {
 //            }
 //        }
 
-        int idx = 1;
-        while (idx < 100) {
-            if (idx % 15 == 0) { // If idx is divisible by 3 and 5, print Fizz Buzz
-                System.out.println("Fizz Buzz");
-            } else if (idx % 5 == 0) { // If idx is divisible by 5, print Buzz
-                System.out.println("Buzz");
-            } else if (idx % 3 == 0) { // If idx is divisible by 3, print Fizz
-                System.out.println("Fizz");
-            }
-            idx ++;
+        int i = 1;
+        while (i < 100) {
+            i = doFizzBuzz(i);
         }
+    }
+
+    // Does Fizzbuzz on a positive integer i
+    private static int doFizzBuzz(int i) {
+        if (i % 15 == 0) { // If i is divisible by 3 and 5, print Fizz Buzz
+            System.out.println("Fizz Buzz");
+        } else if (i % 5 == 0) { // If i is divisible by 5, print Buzz
+            System.out.println("Buzz");
+        } else if (i % 3 == 0) { // If i is divisible by 3, print Fizz
+            System.out.println("Fizz");
+        }
+        i++;
+        return i;
     }
 }
